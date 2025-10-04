@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "URL Redirector",
+  "version": "1.0",
+  "description": "Simple URL rewriting extension using regex patterns",
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "url-redirector@example.com"
+    }
+  },
+  
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "storage"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "URL Redirector"
+  }
+}
